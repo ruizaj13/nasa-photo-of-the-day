@@ -4,6 +4,14 @@ import axios from 'axios';
 import Header from './components/Header';
 import Image from './components/Image';
 import Explanation from './components/Explanation'
+import styled from 'styled-components'
+
+
+const StyledApp = styled.div`
+ 
+  background-color: ${props => props.theme.primaryColor};
+  
+`
 
 function App() {
   // const [nasaData, setNasaData] = useState();
@@ -22,11 +30,11 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <StyledApp className="App">
       <Header/>
       <Image />
       <Explanation/>
-    </div>
+    </StyledApp>
   );
 }
 

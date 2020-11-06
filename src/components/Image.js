@@ -1,5 +1,18 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
+import styled, { keyframes } from 'styled-components';
+
+const kf = keyframes`
+  100% {
+    opacity: 1;
+  }
+`
+
+const ImageStyling = styled.div`
+    opacity: 0;
+    animation: ${kf} 3s ease-in-out forwards;
+    object-fit: scale-down;
+`
 
 export default function Image(){
 
@@ -16,8 +29,8 @@ export default function Image(){
     
 
     return (
-        <div className='imageContainer'>
-            <img src={imageUrl} style={{border:'5px dashed #0B3D91'}} />
-        </div>
+        <ImageStyling className='imageContainer'>
+            <img src={imageUrl}/>
+        </ImageStyling>
     )
 }
