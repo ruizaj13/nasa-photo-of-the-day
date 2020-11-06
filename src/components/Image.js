@@ -11,7 +11,15 @@ const kf = keyframes`
 const ImageStyling = styled.div`
     opacity: 0;
     animation: ${kf} 3s ease-in-out forwards;
-    object-fit: scale-down;
+    img{
+        border: 2px dashed white;
+       &:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s ease-in-out;
+       }
+       transition: transform 0.5s ease-in-out; 
+    }
+    
 `
 
 export default function Image(){

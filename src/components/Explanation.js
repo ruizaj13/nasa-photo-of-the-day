@@ -4,8 +4,18 @@ import styled from 'styled-components'
 
 const StyledExplanation = styled.div `            
     color: ${props => props.theme.secondaryColor};
+    padding-bottom: 1%;
+    
     h2{
-        text-shadow: 2px 2px black;
+        text-shadow: ${props => props.theme.dropShadow};
+    }
+
+    p{
+       width: 50%;
+       margin-left: auto;
+       margin-right: auto;
+       padding-bottom: 3%;
+        
     }
 `
 
