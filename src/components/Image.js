@@ -38,7 +38,7 @@ export default function Image(){
 
     return (
         <ImageStyling className='imageContainer'>
-            <img src={imageUrl}/>
+            <img src={imageUrl} alt=''/>
         </ImageStyling>
     )
 }

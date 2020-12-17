@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import "./App.css";
 import axios from 'axios';
 import Header from './components/Header';
@@ -14,7 +14,7 @@ const StyledApp = styled.div`
 `
 
 function App() {
-  // const [nasaData, setNasaData] = useState();
+ 
  
 
   useEffect(() => {

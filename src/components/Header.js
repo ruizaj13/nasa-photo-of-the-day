@@ -19,7 +19,7 @@ const StyledHeader = styled.div`
 export default function Header(){
     return(
         <StyledHeader className='Title'>
-            <h1>NASA Pic Of The Day 🚀</h1>
+            <h1>NASA Pic Of The Day <span role='img' alt='rocket'>🚀</span></h1>
         </StyledHeader>
     )
 }
